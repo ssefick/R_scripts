@@ -1,0 +1,303 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><title>Station Pressure Calculator</title>
+<meta name="DC.title" content="Station Pressure Calculator">
+<meta name="DC.description" content="Station Pressure Calculator">
+<meta name="DC.creator" content="US Department of Commerce, NOAA, National Weather Service">
+<meta name="DC.date.created" scheme="ISO8601" content="2009-10-20">
+<meta name="DC.date.reviewed" scheme="ISO8601" content="2012-10-17">
+<meta name="DC.language" scheme="DCTERMS.RFC1766" content="EN-US">
+<meta name="DC.keywords" content="wxcalc, station pressure, weather, formula, convertor, calculator">
+<meta name="DC.publisher" content="NOAA's National Weather Service">
+<meta name="DC.contributor" content="National Weather Service">
+<meta name="DC.rights" content="http://www.weather.gov/disclaimer.php">
+<meta name="rating" content="General">
+<meta name="robots" content="index,follow">
+<meta name="Distribution" content="Global">
+<link href="Station%20Pressure%20Calculator_files/main_1024.css" title="nwsstyle" rel="stylesheet" type="text/css" media="all"></head>
+<body>
+<div id="container"><a href="#skipnav" class="skip">Skip Navigation</a>
+<div id="header">
+<div id="brand"><a href="http://www.noaa.gov/" class="noaalink">NOAA</a><div align="center"><a href="http://www.weather.gov/" class="wxlink">weather.gov</a></div>
+<h1>National Weather Service Weather Forecast Office</h1>
+<a href="http://www.srh.noaa.gov/epz" class="site">El Paso, TX</a>
+</div>
+<div id="searchDiv">
+	<ul>
+<li><a href="http://www.srh.noaa.gov/epz">Home</a></li><li><a href="http://www.srh.noaa.gov/epz/sitemap.php">Site Map</a></li>		<li><a href="http://www.weather.gov/pa/">News</a></li>
+		<li><a href="http://weather.gov/organization.php">Organization</a></li>
+		<!--begin search code -->
+		<li><form method="get" action="http://search.usa.gov/search" id="search"><div>
+    	<input name="v:project" value="firstgov" type="hidden">
+    	<label for="query">Search for: <input name="query" id="query" class="input" size="10" type="text"></label>
+    	<input name="affiliate" checked="checked" value="nws.noaa.gov" id="nws" type="radio">
+   	 	<label for="nws">NWS</label><input name="affiliate" value="noaa.gov" id="noaa" type="radio">
+   		<label for="noaa">All NOAA</label>&nbsp;<input class="input" value="Go" type="submit"></div></form></li>
+   		<!--end search code -->
+	</ul>
+</div>
+</div>
+
+	<div id="menu">
+
+		<form id="fcst" action="/zipcity.php" method="post"><div>
+		  <label for="Go2">Local forecast by<br> "City, St" or Zip Code</label>
+		  <input name="inputstring" value="City, St" size="8" onfocus="this.value='';" type="text">
+		  <input name="Go2" id="Go2" value="Go" type="submit">
+		  <input name="siteid" value="epz" type="hidden"></div>
+		</form>
+		<ul>
+		<li><ul><li>
+			<a href="http://www.weather.gov/rss/"><img src="Station%20Pressure%20Calculator_files/xml.gif" alt="RSS Feeds" title="RSS Feeds" class="img" height="14" width="36"> RSS Feeds</a>
+		</li></ul></li><li>Current Hazards
+<ul>
+<li><a href="http://www.crh.noaa.gov/hazards/epz" title="Local">Local</a></li>
+<li><a href="http://www.cpc.ncep.noaa.gov/products/predictions/threats/" title="Nationwide">Nationwide</a></li>
+<li><a href="http://www.noaawatch.gov/" title="Outlooks">Outlooks</a></li>
+<li><a href="http://www.srh.noaa.gov/epz/?n=roadclosuresacrossnmandtx" title="Road conditions for Texas and New Mexico">Road Conditions</a></li>
+</ul>
+</li>
+<li>Forecasts
+<ul>
+<li><a href="http://www.srh.noaa.gov/epz/php/productview/productview_new.php" title="Local">Local</a></li>
+<li><a href="http://forecast.weather.gov/product.php?site=NWS&amp;issuedby=EPZ&amp;product=AFD&amp;format=CI&amp;version=1&amp;glossary=0" title="Forecast Discussion">Forecast Discussion</a></li>
+<li><a href="http://forecast.weather.gov/wxplanner.php?site=epz" title="Activity Planner">Activity Planner</a></li>
+<li><a href="http://www.srh.noaa.gov/graphical/sectors/epz.php" title="Graphical">Graphical</a></li>
+<li><a href="http://www.srh.noaa.gov/epz/?n=fireweather" title="Fire Weather">Fire Weather</a></li>
+<li><a href="http://www.srh.noaa.gov/epz/?n=aviation" title="Aviation Weather">Aviation Weather</a></li>
+<li><a href="http://www.srh.noaa.gov/epz/podcasts/eng_podcast.php" title="Forecast via podcasting">MP3/Podcast</a></li>
+</ul>
+</li>
+<li>Current Weather
+<ul>
+<li><a href="http://www.weather.gov/observations.php" title="Observations">Observations</a></li>
+<li><a href="http://www.srh.noaa.gov/epz/?n=satelliteimages" title="Satellite Images">Satellite Images</a></li>
+<li><a href="http://water.weather.gov/ahps2/index.php?wfo=epz" title="Rivers/Lakes">Rivers/Lakes</a></li>
+</ul>
+</li>
+<li>Radar Imagery
+<ul>
+<li><a href="http://www.weather.gov/radar_tab.php" title="Nationwide">Nationwide</a></li>
+<li><a href="http://radar.weather.gov/ridge/radar.php?rid=epz&amp;product=N0R&amp;overlay=11101111&amp;loop=no" title="El Paso">El Paso</a></li>
+<li><a href="http://radar.weather.gov/ridge/radar.php?rid=hdx&amp;product=N0R&amp;overlay=11101111&amp;loop=no" title="Holloman Air Force Base">Holloman AFB</a></li>
+</ul>
+</li>
+<li>Climate
+<ul>
+<li><a href="http://www.weather.gov/climate/index.php?wfo=epz" title="Local">Local</a></li>
+<li><a href="http://www.weather.gov/climate/" title="National">National</a></li>
+<li><a href="http://www.weather.gov/climate/local_data.php?wfo=epz" title="More...">More...</a></li>
+<li><a href="http://www.srh.noaa.gov/epz/?n=elpdroughtpage" title="Drought">Drought</a></li>
+</ul>
+</li>
+<li>Weather Safety
+<ul>
+<li><a href="http://www.srh.noaa.gov/epz/?n=nwr" title="Weather Radio">Weather Radio</a></li>
+<li><a href="http://www.weather.gov/skywarn/" title="SKYWARN">SKYWARN</a></li>
+<li><a href="http://www.stormready.noaa.gov/" title="Storm Ready">Storm Ready</a></li>
+<li><a href="http://www.srh.noaa.gov/abq/?n=prepawaremonsoonhome" title="Monsoon Awareness">Monsoon Awareness</a></li>
+<li><a href="http://www.srh.noaa.gov/epz/?n=spottertalks" title="Spotter Training">Spotter Training</a></li>
+<li><a href="http://www.srh.noaa.gov/epz/?n=volunteer" title="Volutneer Programs">Volunteer Programs</a></li>
+</ul>
+</li>
+<li>Other Items
+<ul>
+<li><a href="http://www.srh.noaa.gov/epz/?n=wxcalc" title="Weather Calculator">Weather Calculator</a></li>
+<li><a href="http://www.srh.noaa.gov/epz/?n=bufkit" title="Bufkit">Bufkit</a></li>
+<li><a href="http://www.srh.noaa.gov/epz/?n=epz_staff" title="office staff">Office Staff</a></li>
+<li><a href="http://www.srh.noaa.gov/epz/quickbrief/" title="Quick Brief">Quick Brief</a></li>
+<li><a href="http://www.srh.noaa.gov/epz/?n=research_papers" title="Papers written by office staff members">Office Research</a></li>
+<li><a href="http://www.srh.noaa.gov/epz/?n=events" title="Notable events and newsletter archive">Event Summaries</a></li>
+</ul>
+</li>
+</ul><br></div><a name="skipnav"></a>
+<div id="local"> <div id="localcontent">
+<!-- // CONTENT STARTS HERE -->
+
+<script language="JavaScript">
+			function decideConvert(height, pressure)
+			{
+				height = parseFloat(document.Convert.Height.value);
+				pressure = parseFloat(document.Convert.AltPress.value);
+				var Mheight, MBpressure;
+
+				if (document.Convert.heightunit[0].checked)
+				{
+					Mheight = parseFloat(convertfeettometer(height));
+				}
+				
+				if (document.Convert.heightunit[1].checked)
+				{
+					Mheight = height;
+				}
+		
+				if (document.Convert.pressureunit[0].checked)
+				{
+					INpressure = pressure;
+				}
+				
+				if (document.Convert.pressureunit[1].checked)
+				{
+					INpressure = parseFloat(convertmmHGtoinHG(pressure));
+				}
+				
+				if (document.Convert.pressureunit[2].checked)
+				{
+					INpressure = parseFloat(convertmbtoinHG(pressure));
+				}
+
+			var stnpressure;		
+			
+			
+			
+			stnpressure = INpressure * Math.pow((288 - 0.0065 * Mheight)/288,5.2561)
+			
+			
+			 
+			document.Convert.StationPressinHG.value = roundOff(stnpressure);
+			document.Convert.StationPressmmHG.value = roundOff(parseFloat(convertinHGtommHG(stnpressure)));
+			document.Convert.StationPressmb.value = roundOff(parseFloat(convertinHGtomb(stnpressure)));
+
+				
+			}
+				
+			function convertinHGtomb(inHG)
+			{
+				var mb;
+				mb = 33.8639*inHG;
+				return mb;
+			}
+
+						
+			function convertmbtoinHG(mb)
+			{
+				var inHG;
+				inHG = 0.0295300*mb;
+				return inHG;
+			}
+
+			function convertinHGtommHG(inHG)
+			{
+				var mmHG;
+				mmHG = 25.4*inHG;
+				return mmHG;
+			}
+			
+			function convertmmHGtoinHG(mmHG)
+			{
+				var inHG;
+				inHG = 0.03937008*mmHG;
+				return inHG;
+			}
+
+			function convertfeettometer(feet)
+			{
+				var meter;
+				meter = 0.3048 * feet;
+				return meter;
+			}
+
+			function roundOff(value)
+			{
+				value = Math.round(100*value)/100;
+				return value;
+			}
+
+			function setToNull()
+			{
+				document.Convert.StationPressinHG.value="";
+				document.Convert.StationPressmmHG.value="";
+				document.Convert.StationPressmb.value="";
+				document.Convert.AltPress.value="";
+				document.Convert.Height.value="";
+			}
+		
+		</script>
+<table width="525" border="0" cellpadding="4" cellspacing="0">
+    <tbody>
+        <tr>
+            <td align="center">
+            <h2 align="center">Station Pressure</h2>
+            <h5 align="center">by <a href="mailto:tim.brice@noaa.gov">Tim Brice</a>       and <a href="mailto:todd.hall@noaa.gov">Todd Hall</a></h5>
+            <p align="center">&nbsp;</p>
+            <table width="658" align="center" border="1">
+                <form name="Convert"></form>
+                    <tbody>
+                        <tr>
+                            <td width="381">
+                            <h5>&nbsp;</h5>
+                            </td>
+                            <td width="261">
+                            <h5>&nbsp;</h5>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="381"><strong><font color="#ff0000">Enter the elevation of the               station and choose your units:</font></strong></td>
+                            <td width="261"><strong><font color="#ff0000">Station Pressure in inches               of mercury:</font></strong></td>
+                        </tr>
+                        <tr>
+                            <td width="381"><font color="#ff0000"><input value="58.5" name="Height" size="7" maxlength="6" type="text">               <input name="heightunit" value="feet" type="radio">feet <input checked="checked" name="heightunit" value="meter" type="radio">meters</font></td>
+                            <td width="261"><font color="#ff0000"><input value="29.92" name="StationPressinHG" size="8" type="text">               in HG</font></td>
+                        </tr>
+                        <tr>
+                            <td width="381"><strong><font color="#ff0000">Enter your altimeter               setting and choose your units:</font></strong></td>
+                            <td width="261"><strong><font color="#ff0000">Station Pressure in               millimeters of mercury:</font></strong></td>
+                        </tr>
+                        <tr>
+                            <td width="381"><font color="#ff0000"><input value="30.13" name="AltPress" size="7" maxlength="7" type="text">               <input name="pressureunit" checked="checked" type="radio">in of mercury <input name="pressureunit" type="radio">mm               of mercury <input name="pressureunit" type="radio">millibars (hPA)</font></td>
+                            <td width="261"><font color="#ff0000"><input value="760.01" name="StationPressmmHG" size="8" type="text">               mm HG</font></td>
+                        </tr>
+                        <tr>
+                            <td width="381"><font color="#ff0000">&nbsp;</font></td>
+                            <td width="261"><strong><font color="#ff0000">Station Pressure in               millibars (hectoPascals):</font></strong></td>
+                        </tr>
+                        <tr>
+                            <td width="381"><font color="#ff0000">&nbsp;</font></td>
+                            <td width="261"><font color="#ff0000"><input value="1013.26" name="StationPressmb" size="8" type="text">               mb (hPA)</font></td>
+                        </tr>
+                        <tr>
+                            <td width="381"><font color="#ff0000"><input value="Convert" onclick="decideConvert(document.Convert.Height.value, document.Convert.AltPress.value)" type="button"></font></td>
+                            <td width="261"><font color="#ff0000"><input value="Clear Values" onclick="setToNull()" type="button"></font></td>
+                        </tr>
+                    </tbody>
+                
+            </table>
+            <p>&nbsp;</p>
+            <h5 align="left"><a href="http://www.srh.noaa.gov/images/epz/wxcalc/stationPressure.pdf"><strong>What                is the formula for the station pressure script?</strong></a></h5>
+            &nbsp;</td>
+        </tr>
+    </tbody>
+</table>
+<p>&nbsp;</p>
+
+
+<!-- // CONTENT ENDS HERE -->
+</div></div>
+<div id="required">
+<div id="nws">
+<hr class="required">
+	<div id="firstgov"><a href="http://www.srh.noaa.gov/nwsexit.php?url=http://www.usa.gov/"><img src="Station%20Pressure%20Calculator_files/usagov.gif" alt="USA.gov is the U.S. government's official web portal to all federal, state and local government web resources and services." class="img" height="30" width="110"></a></div>
+		<ul id="contact">
+			<li>National Weather Service</li>
+			<li>El Paso, TX Weather Forecast Office</li>
+			<li>7955 Airport Rd</li><li>Santa Teresa, NM  88008</li>
+<li>(575) 589-4088</li>
+<li>Page Author: EPZ Webmaster</li>
+<li>Web Master's E-mail: <a href="mailto:sr-epz.webmaster@noaa.gov">sr-epz.webmaster@noaa.gov</a></li>
+<li>Page last modified: October 20th 2009 1:39 PM</li>
+		</ul>
+		<ul id="disclaimer">
+			<li><a href="http://www.weather.gov/disclaimer.php">Disclaimer</a></li>
+			<li><a href="http://www.weather.gov/credits.php">Credits</a></li>
+			<li><a href="http://www.weather.gov/glossary/">Glossary</a></li>
+		</ul>
+		<ul id="policy">
+			<li><a href="http://www.weather.gov/privacy.php">Privacy Policy</a></li>
+			<li><a href="http://www.weather.gov/admin.php">About Us</a></li>
+			<li><a href="http://www.weather.gov/careers.php">Career Opportunities</a></li>
+		</ul>
+	</div>
+</div>
+
+</div></body></html>

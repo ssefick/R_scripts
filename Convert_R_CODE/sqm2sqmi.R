@@ -1,0 +1,6 @@
+sqm2sqmi <- function(x){
+
+y <- x*(3.86102159e-7)
+
+return(y)
+}

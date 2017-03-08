@@ -1,0 +1,1 @@
+lbs2g <- function(x){453.592*x}
